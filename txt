@@ -1,0 +1,688 @@
+
+.main_content {
+  overflow-y: scroll;
+  max-width: 1000px;
+  height: 100%;
+  background: #18191a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.404);
+  padding: 0 20px;
+}
+.main_content::-webkit-scrollbar {
+  width: 10px;
+}
+.main_content::-webkit-scrollbar-thumb {
+  background-color: #3a3b3c;
+  border-radius: 10px;
+}
+.main_content::-webkit-scrollbar-track {
+  background: #242526;
+}
+.content-top {
+  width: 100%;
+  border-radius: 10px;
+  background: #242526;
+}
+.content-title_top {
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+}
+.content-title {
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.486);
+  user-select: none;
+  margin: 0 20px;
+}
+
+.content-title:nth-child(1) {
+  border-bottom: 2px solid blue;
+  color: blue;
+  font-weight: bold;
+}
+
+.content-title:nth-child(3):hover,
+.content-title:nth-child(2):hover {
+  background: rgba(250, 248, 248, 0.089);
+  cursor: pointer;
+  border-radius: 10px;
+}
+.content-bottom_main {
+  padding: 15px;
+  overflow-x: scroll;
+}
+.content-bottom_main::-webkit-scrollbar {
+  height: 10px;
+}
+.content-bottom_main::-webkit-scrollbar-thumb {
+  background-color: #3a3b3c;
+  border-radius: 10px;
+}
+.content-bottom_main::-webkit-scrollbar-track {
+  background: #242526;
+}
+.list-content {
+  display: flex;
+}
+.content-list_img {
+  position: relative;
+  border-radius: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.list_img-title_content {
+  position: absolute;
+  font-size: 20px;
+  user-select: none;
+  bottom: 10px;
+  padding: 0 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.content-idea {
+  width: 100%;
+  z-index: 10;
+  height: 150px;
+  background: #242526;
+  padding: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  margin-top: 20px;
+}
+.idea_content-img {
+  border-radius: 100%;
+  margin: 0 10px;
+  width: 50px;
+}
+.content-idea_top {
+  display: flex;
+  padding: 10px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+}
+.idea-search {
+  outline: none;
+  border: none;
+  background: #3a3b3c;
+  font-size: 16px;
+  padding: 0 15px;
+  border-radius: 20px;
+  width: 100%;
+  color: white;
+}
+.title-box_bottom {
+  font-size: 17px;
+  user-select: none;
+  color: white;
+}
+.group-box_bottom {
+  width: 30%;
+  height: 100%;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.group-box_bottom_item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box-mess_item {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fa-face-smile,
+.fa-image,
+.fa-video {
+  font-size: 30px;
+  margin: 0 10px;
+  color: red;
+}
+.fa-face-smile {
+  color: #f7b928;
+}
+.fa-image {
+  color: #41aa5b;
+}
+.group-box_bottom:hover {
+  background: rgb(70, 69, 69);
+  border-radius: 10px;
+}
+.content-paragraph {
+  width: 100%;
+  margin-top: 10px;
+}
+.content-paragraph_item {
+  border-radius: 10px;
+  margin: 10px 0;
+  background: #242526;
+}
+.p-top {
+  padding: 15px;
+}
+.p-top_item2,
+.p-top {
+  display: flex;
+  align-items: center;
+}
+.p-top_title {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.p-top_item-title {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.fa-ellipsis {
+  font-size: 15px;
+}
+.p-top_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.p-top_item:nth-child(1) {
+  margin-right: 15px;
+  width: 130px;
+}
+.box-str-cmt {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+.box-str-cmt_1 {
+  display: flex;
+  align-items: center;
+}
+.box-str-cmt_1 .fa-solid {
+  margin: 0 3px;
+  font-size: 20px;
+}
+.box-str-cmt_1 .fa-solid:nth-child(1) {
+  color: #22a4fc;
+  color: #129cf7;
+}
+
+.box-str-cmt_1 .fa-solid:nth-child(2) {
+  color: #22a4fc;
+  color: #e71d47;
+}
+.cmt {
+  cursor: pointer;
+  font-size: 18px;
+  color: #a2b3b8;
+}
+.title-cmt:hover,
+.cmt:hover {
+  text-decoration: underline;
+}
+.title-cmt {
+  cursor: pointer;
+  font-size: 18px;
+  color: #a2b3b8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main_content">
+<div class="content-top">
+  <div class="content-title_top">
+    <p class="content-title">Tin</p>
+    <p class="content-title">Reel</p>
+    <p class="content-title">Phòng Họp Mặt</p>
+  </div>
+
+  <div class="content-bottom_main">
+    <ul class="list-content">
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+      <li class="content-list_img">
+        <img
+          src="zb.jpg"
+          alt=""
+          style="width: 200px; height: 300px; border-radius: 20px"
+        />
+        <p class="list_img-title_content">Zabook</p>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="content-idea">
+  <div class="content-idea_top">
+    <img src="avt.jpg" alt="" class="idea_content-img" />
+    <input
+      type="text"
+      placeholder="Bạn Đang Cảm Thấy Gì"
+      class="idea-search"
+    />
+  </div>
+
+  <div class="box-mess_item">
+    <div class="group-box_bottom">
+      <div class="group-box_bottom_item">
+        <i class="fa-solid fa-video"></i>
+        <p class="title-box_bottom">Video Trực Tiếp</p>
+      </div>
+    </div>
+
+    <div class="group-box_bottom">
+      <div class="group-box_bottom_item">
+        <i class="fa-solid fa-image"></i>
+        <p class="title-box_bottom">Ảnh/Video</p>
+      </div>
+    </div>
+
+    <div class="group-box_bottom">
+      <div class="group-box_bottom_item">
+        <i class="fa-solid fa-face-smile"></i>
+        <p class="title-box_bottom">Cảm Xúc/Hoạt Động</p>
+      </div>
+    </div>
+  </div>
+</div>
+<ul class="content-paragraph">
+  <li class="content-paragraph_item">
+    <div class="p-top">
+      <img
+        src="love-vt.jpg"
+        alt=""
+        style="border-radius: 100%; width: 60px; margin-right: 10px"
+      />
+      <div class="p-top_item">
+        <div class="p-top_item1">
+          <p class="p-top_title">Hóng Biến GenZ</p>
+          <div class="p-top_item2">
+            <p class="p-top_item-title">Đình Duy Em</p>
+            <p class="p-top_item-title">
+              3 Giờ <i class="fa-solid fa-globe"></i>
+            </p>
+          </div>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </div>
+    <img
+      src="content.jpg"
+      alt=""
+      class="content_img"
+      style="width: 100%"
+    />
+    <div class="box-str-cmt">
+      <div class="box-str-cmt_1">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <i class="fa-solid fa-heart"></i>
+        <p class="title-cmt">9999</p>
+      </div>
+      <div class="box-str-cmt_2">
+        <p class="cmt">999 Bình Luận</p>
+      </div>
+    </div>
+  </li>
+  <li class="content-paragraph_item">
+    <div class="p-top">
+      <img
+        src="love-vt.jpg"
+        alt=""
+        style="border-radius: 100%; width: 60px; margin-right: 10px"
+      />
+      <div class="p-top_item">
+        <div class="p-top_item1">
+          <p class="p-top_title">Hóng Biến GenZ</p>
+          <div class="p-top_item2">
+            <p class="p-top_item-title">Đình Duy Em</p>
+            <p class="p-top_item-title">
+              3 Giờ <i class="fa-solid fa-globe"></i>
+            </p>
+          </div>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </div>
+    <img
+      src="content.jpg"
+      alt=""
+      class="content_img"
+      style="width: 100%"
+    />
+    <div class="box-str-cmt">
+      <div class="box-str-cmt_1">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <i class="fa-solid fa-heart"></i>
+        <p class="title-cmt">9999</p>
+      </div>
+      <div class="box-str-cmt_2">
+        <p class="cmt">999 Bình Luận</p>
+      </div>
+    </div>
+  </li>
+  <li class="content-paragraph_item">
+    <div class="p-top">
+      <img
+        src="love-vt.jpg"
+        alt=""
+        style="border-radius: 100%; width: 60px; margin-right: 10px"
+      />
+      <div class="p-top_item">
+        <div class="p-top_item1">
+          <p class="p-top_title">Hóng Biến GenZ</p>
+          <div class="p-top_item2">
+            <p class="p-top_item-title">Đình Duy Em</p>
+            <p class="p-top_item-title">
+              3 Giờ <i class="fa-solid fa-globe"></i>
+            </p>
+          </div>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </div>
+    <img
+      src="content.jpg"
+      alt=""
+      class="content_img"
+      style="width: 100%"
+    />
+    <div class="box-str-cmt">
+      <div class="box-str-cmt_1">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <i class="fa-solid fa-heart"></i>
+        <p class="title-cmt">9999</p>
+      </div>
+      <div class="box-str-cmt_2">
+        <p class="cmt">999 Bình Luận</p>
+      </div>
+    </div>
+  </li>
+  <li class="content-paragraph_item">
+    <div class="p-top">
+      <img
+        src="love-vt.jpg"
+        alt=""
+        style="border-radius: 100%; width: 60px; margin-right: 10px"
+      />
+      <div class="p-top_item">
+        <div class="p-top_item1">
+          <p class="p-top_title">Hóng Biến GenZ</p>
+          <div class="p-top_item2">
+            <p class="p-top_item-title">Đình Duy Em</p>
+            <p class="p-top_item-title">
+              3 Giờ <i class="fa-solid fa-globe"></i>
+            </p>
+          </div>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </div>
+    <img
+      src="content.jpg"
+      alt=""
+      class="content_img"
+      style="width: 100%"
+    />
+    <div class="box-str-cmt">
+      <div class="box-str-cmt_1">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <i class="fa-solid fa-heart"></i>
+        <p class="title-cmt">9999</p>
+      </div>
+      <div class="box-str-cmt_2">
+        <p class="cmt">999 Bình Luận</p>
+      </div>
+    </div>
+  </li>
+  <li class="content-paragraph_item">
+    <div class="p-top">
+      <img
+        src="love-vt.jpg"
+        alt=""
+        style="border-radius: 100%; width: 60px; margin-right: 10px"
+      />
+      <div class="p-top_item">
+        <div class="p-top_item1">
+          <p class="p-top_title">Hóng Biến GenZ</p>
+          <div class="p-top_item2">
+            <p class="p-top_item-title">Đình Duy Em</p>
+            <p class="p-top_item-title">
+              3 Giờ <i class="fa-solid fa-globe"></i>
+            </p>
+          </div>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </div>
+    <img
+      src="content.jpg"
+      alt=""
+      class="content_img"
+      style="width: 100%"
+    />
+    <div class="box-str-cmt">
+      <div class="box-str-cmt_1">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <i class="fa-solid fa-heart"></i>
+        <p class="title-cmt">9999</p>
+      </div>
+      <div class="box-str-cmt_2">
+        <p class="cmt">999 Bình Luận</p>
+      </div>
+    </div>
+  </li>
+  <li class="content-paragraph_item">
+    <div class="p-top">
+      <img
+        src="love-vt.jpg"
+        alt=""
+        style="border-radius: 100%; width: 60px; margin-right: 10px"
+      />
+      <div class="p-top_item">
+        <div class="p-top_item1">
+          <p class="p-top_title">Hóng Biến GenZ</p>
+          <div class="p-top_item2">
+            <p class="p-top_item-title">Đình Duy Em</p>
+            <p class="p-top_item-title">
+              3 Giờ <i class="fa-solid fa-globe"></i>
+            </p>
+          </div>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </div>
+    <img
+      src="content.jpg"
+      alt=""
+      class="content_img"
+      style="width: 100%"
+    />
+    <div class="box-str-cmt">
+      <div class="box-str-cmt_1">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <i class="fa-solid fa-heart"></i>
+        <p class="title-cmt">9999</p>
+      </div>
+      <div class="box-str-cmt_2">
+        <p class="cmt">999 Bình Luận</p>
+      </div>
+    </div>
+  </li>
+  <li class="content-paragraph_item">
+    <div class="p-top">
+      <img
+        src="love-vt.jpg"
+        alt=""
+        style="border-radius: 100%; width: 60px; margin-right: 10px"
+      />
+      <div class="p-top_item">
+        <div class="p-top_item1">
+          <p class="p-top_title">Hóng Biến GenZ</p>
+          <div class="p-top_item2">
+            <p class="p-top_item-title">Đình Duy Em</p>
+            <p class="p-top_item-title">
+              3 Giờ <i class="fa-solid fa-globe"></i>
+            </p>
+          </div>
+        </div>
+        <i class="fa-solid fa-ellipsis"></i>
+      </div>
+    </div>
+    <img
+      src="content.jpg"
+      alt=""
+      class="content_img"
+      style="width: 100%"
+    />
+    <div class="box-str-cmt">
+      <div class="box-str-cmt_1">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <i class="fa-solid fa-heart"></i>
+        <p class="title-cmt">9999</p>
+      </div>
+      <div class="box-str-cmt_2">
+        <p class="cmt">999 Bình Luận</p>
+      </div>
+    </div>
+  </li>
+  
+</ul>
+</div>
